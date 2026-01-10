@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Club Workshop - Registration</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo"> TechClub</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Events</a>
+                <a href="#">Team</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="hero">
+                <h1>AI & Future Tech Workshop</h1>
+                <p>Join us for an evening of coding, pizza, and networking.</p>
+                
+                <div class="counter-box">
+                    <h3>Spots Remaining: <span id="counter">10</span></h3>
+                </div>
+
+                <button id="mainBtn" class="register-btn">Register Now</button>
+            </div>
+        </main>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Confirm Registration</h2>
+            <form id="regForm">
+                <input type="text" placeholder="Enter your Name" required>
+                <input type="email" placeholder="College Email ID" required>
+                
+                <div class="modal-actions">
+                    <button type="button" class="submit-btn">Confirm & Submit</button>
+                    <button type="button" class="close-btn" onclick="closeModal()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

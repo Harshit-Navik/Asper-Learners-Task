@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #38bdf8;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.counter-box {
+    background: #1e293b;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 1px solid #334155;
+}
+
+/* BUG 2: This z-index makes the button unclickable because it sits behind the body */
+.register-btn {
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative; 
+    z-index: -1; 
+    transition: transform 0.2s;
+}
+
+.register-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: white;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background: #22c55e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn {
+    background: transparent;
+    color: #94a3b8;
+    border: 1px solid #94a3b8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
