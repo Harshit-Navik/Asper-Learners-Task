@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Club Workshop - Registration</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
 </head>
+
 <body>
 
     <div class="container">
         <header>
-            <div class="logo"> TechClub</div>
+            <div class="logo">TechClub</div>
             <nav>
                 <a href="#">Home</a>
                 <a href="#">Events</a>
@@ -23,7 +24,7 @@
             <div class="hero">
                 <h1>AI & Future Tech Workshop</h1>
                 <p>Join us for an evening of coding, pizza, and networking.</p>
-                
+
                 <div class="counter-box">
                     <h3>Spots Remaining: <span id="counter">10</span></h3>
                 </div>
@@ -39,7 +40,7 @@
             <form id="regForm">
                 <input type="text" placeholder="Enter your Name" required>
                 <input type="email" placeholder="College Email ID" required>
-                
+
                 <div class="modal-actions">
                     <button type="button" class="submit-btn">Confirm & Submit</button>
                     <button type="button" class="close-btn" onclick="closeModal()">Cancel</button>
@@ -48,5 +49,10 @@
         </div>
     </div>
 
+
+    <!-- adding the script tag at last of body tag because it needs to be rendered after rendering page , but when its in head tag its rendering before and because of that we are getting error -->
+
+   <script src="index.js"></script>
 </body>
+
 </html>
